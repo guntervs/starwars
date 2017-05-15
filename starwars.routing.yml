@@ -1,0 +1,23 @@
+starwars.resources:
+  path: '/starwars'
+  defaults:
+    _controller: '\Drupal\starwars\Controller\StarWarsController::typeView'
+    _title: 'Star Wars API browser'
+  requirements:
+    _permission: 'access content'
+
+starwars.list:
+  path: '/starwars/{type}'
+  defaults:
+    _controller: '\Drupal\starwars\Controller\StarWarsController::listView'
+    _title: 'Star Wars API browser - list'
+  requirements:
+    _permission: 'access content'
+
+starwars.detail:
+  path: '/starwars/{type}/{id}'
+  defaults:
+    _controller: '\Drupal\starwars\Controller\StarWarsController::detailView'
+    _title: 'Star Wars API browser - detail'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+name: Star Wars Client
+core: 8.x
+description: Browse the Star Wars API
+package: IMD
+type: module

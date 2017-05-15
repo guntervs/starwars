@@ -1,0 +1,7 @@
+<ul>
+    {% for type in types %}
+        <li>
+            <a href="{{ path('starwars.list', { 'type': type }) }}">{{ type | capitalize }}</a>
+        </li>
+    {% endfor %}
+</ul>

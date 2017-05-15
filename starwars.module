@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function starwars_theme($existing, $type, $theme, $path) {
+  $hooks = [];
+
+  $hooks['sw_types'] = [
+    'variables' => [
+      'types' => [],
+    ]
+  ];
+
+  $hooks['sw_list'] = [
+    'variables' => [
+      'type' => '',
+      'list' => [],
+    ]
+  ];
+
+  $hooks['sw_detail'] = [
+    'variables' => [
+      'type' => '',
+      'detail' => [],
+    ]
+  ];
+
+  return $hooks;
+}
